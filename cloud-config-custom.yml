@@ -1,0 +1,16 @@
+#cloud-config
+hostname: RancherOS-inst
+rancher:
+  network:
+    dns:
+      nameservers:
+        - 223.5.5.5
+        - 223.6.6.6
+  bootstrap_docker:
+    registry_mirror: https://registry.docker-cn.com
+  docker:
+    registry_mirror: https://registry.docker-cn.com
+  system_docker:
+    registry_mirror: https://registry.docker-cn.com
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGi6kRI351GBZiRJGKdtdrhbp6ElFEw1Hb+yod3NHkXl RancherOS.inst

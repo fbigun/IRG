@@ -58,7 +58,9 @@ sed -e 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=60/' -i /etc/default/grub
 update-grub
 ```
 
-## 添加启动菜单项目，**注意**内核参数`rancher.network.interfaces.eth*.dhcp=true`对应网卡
+## 添加启动菜单项目
+
+> **注意**内核参数`rancher.network.interfaces.eth*.dhcp=true`对应网卡
 
 ```
 cat >> /boot/grub/grub.cfg << EOF

@@ -44,10 +44,9 @@ rancher/os:v0.4.5 remote available
 低版本的RancherOS 引导对系统内存要求更低
 
 > 不高于1G内存的使用`RancherOS`版本低于`v1.3.0`理论上可引导成功，已测试过`v1.2.0`可以启动(`docker engine`<=`17.12.1`)，或者通过降低`docker engine`版本重新打包`RancherOS`最新版本降低对内存使用要求。
-
 > ```
-wget https://releases.rancher.com/os/v1.2.0/initrd
-wget https://releases.rancher.com/os/v1.2.0/vmlinuz
+>wget https://releases.rancher.com/os/v1.2.0/initrd
+>wget https://releases.rancher.com/os/v1.2.0/vmlinuz
 > ```
 
 
